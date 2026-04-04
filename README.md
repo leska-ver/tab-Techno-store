@@ -1,5 +1,4 @@
 # Коротко о проекте:
-Слайдер работает с ним!
 
 ## Ссылка на сайт
 - https://leska-ver.github.io/tab-Techno-store/
