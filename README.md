@@ -8,7 +8,7 @@
 New(или + рядом с авой) -> Repository name назвали типа tab-Techno-store -> Create repository -> Создали пустую папку на рабочем столе -> в ней Git Bash Here(ПКМ) -> git clone ссылка -> в папку tab-Techno-store(которая с Github пришла) кидаем файлы которые надо -> И в этой же папке открываем снова Git Bash Here(ПКМ) - git add . -> git commit -m 'текст' -> git push -> На сайте обновляем страничку Github После исправления -> В папке нужной ПКМ -> Git Bash Here -> git add . -> git commit -m 'текст' -> git push -> На сайте обновляем страничку Github
 
 ## Как настроит видимость сайта Pages
-Settings -> Pages -> в Branch выбираем main, жмём Save. в Custom domain пишим название https://leska-ver.github.io/leska-portfolio/, жмём Save.
+Settings -> Pages -> в Branch выбираем main, жмём Save. в Custom domain пишим название https://leska-ver.github.io/tab-Techno-store/, жмём Save.
 
 ## Пуши по отдельности в VSCode и в консоле!
 - git status - вводить чтобы избежать конфлика в коммите.
