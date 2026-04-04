@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--закрасить адресную строку и строку уведомлений в любой цвет.-->
+    <meta name="theme-color" content="#1f1f1f">
+    <title>Таб без jQuery data-target + JS в Техно</title>   
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <section class="laptops">
+      <div class="laptops__container">
+        <!-- Шаблон меню в товарах  -->
+        <div class="laptops__acc acc acc-1920">
+          <ul class="acc__list">
+            <li class="acc__item">
+              <button class="acc__link active js-custom-tab" data-path="gsSeries" href="#">MSI GS Series</button>
+            </li>
+            <li class="acc__item">
+              <button class="acc__link js-custom-tab" data-path="gtSeries" href="#">MSI GT Series</button>
+            </li>
+            <li class="acc__item">
+              <button class="acc__link js-custom-tab" data-path="glSeries" href="#">MSI GL Series</button>
+            </li>
+            <li class="acc__item">
+              <button class="acc__link js-custom-tab" data-path="geSeries" href="#">MSI GE Series</button>
+            </li>
+          </ul>
+        </div>
+        <div class="laptops__display">
+          <div class="laptops__baner baner">
+            <div class="laptops__content baner__content">
+              <h2 class="laptops__h2 baner__h2 h2">MSI Laptops</h2>
+              <a class="laptops__link baner__link" href="">See All Products</a>
+            </div>
+          </div>
+          <!-- Шаблон меню в товарах  -->
+          <div class="laptops__acc acc acc-375">
+            <ul class="acc__list">
+              <li class="acc__item">
+                <button class="acc__link active js-custom-tab" data-path="gsSeries" href="#">MSI GS Series</button>
+              </li>
+              <li class="acc__item">
+                <button class="acc__link js-custom-tab" data-path="gtSeries" href="#">MSI GT Series</button>
+              </li>
+              <li class="acc__item">
+                <button class="acc__link js-custom-tab" data-path="glSeries" href="#">MSI GL Series</button>
+              </li>
+              <li class="acc__item">
+                <button class="acc__link js-custom-tab" data-path="geSeries" href="#">MSI GE Series</button>
+              </li>
+            </ul>
+          </div>
+          <div class="laptops__swiper swiper js-custom-tab" data-target="gsSeries">
+            <!-- Шаблон карточек catalog -->
+            <ul class="laptops__list swiper-wrapper catalog">
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/1.png" alt="Товар-1">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>                        
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/2.png" alt="Товар-2">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/3.png" alt="Товар-3">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/4.png" alt="Товар-4">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/5.png" alt="Товар-5">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>            
+            </ul>
+            <!-- Кастомные стрелки для hero 
+            <div class="laptops__prev swiper-button-prev"><span>‹</span></div>
+            <div class="laptops__next swiper-button-next"><span>›</span></div>-->
+          </div>
+
+          <div class="laptops__swiper swiper js-custom-tab" data-target="gtSeries">
+            <!-- Шаблон карточек catalog -->
+            <ul class="laptops__list swiper-wrapper catalog">
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/5.png" alt="Товар-5">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li> 
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/1.png" alt="Товар-1">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>                        
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/2.png" alt="Товар-2">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/3.png" alt="Товар-3">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/4.png" alt="Товар-4">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>           
+            </ul>
+            <!-- Кастомные стрелки для hero 
+            <div class="laptops__prev swiper-button-prev"><span>‹</span></div>
+            <div class="laptops__next swiper-button-next"><span>›</span></div>-->
+          </div>
+
+          <div class="laptops__swiper swiper js-custom-tab" data-target="glSeries">
+            <!-- Шаблон карточек catalog -->
+            <ul class="laptops__list swiper-wrapper catalog">
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/4.png" alt="Товар-4">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/5.png" alt="Товар-5">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li> 
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/1.png" alt="Товар-1">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>                        
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/2.png" alt="Товар-2">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/3.png" alt="Товар-3">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>           
+            </ul>
+            <!-- Кастомные стрелки для hero 
+            <div class="laptops__prev swiper-button-prev"><span>‹</span></div>
+            <div class="laptops__next swiper-button-next"><span>›</span></div>-->
+          </div>
+
+          <div class="laptops__swiper swiper js-custom-tab" data-target="geSeries">
+            <!-- Шаблон карточек catalog -->
+            <ul class="laptops__list swiper-wrapper catalog">
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/3.png" alt="Товар-3">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/4.png" alt="Товар-4">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/5.png" alt="Товар-5">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li> 
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/1.png" alt="Товар-1">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>                        
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item swiper-slide">
+                <article class="catalog__article">
+                  <div class="catalog__sub">
+                    <span class="catalog__available">in stock</span>
+                    <img class="catalog__img" src="./img/laptops/2.png" alt="Товар-2">
+                  </div>
+                  <div class="catalog__block">
+                    <div> <!--Занимает всё доступное пространство -->
+                      <div class="catalog__arrowText">
+                        <div class="catalog__stars"><!--Блок рейтинга-->
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="Рейтинг отеля 4 из 5">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-yellow-svg" src="./img/catalog/svg/star.svg" alt="">
+                          <img class="catalog__rating-gray-svg" src="./img/catalog/svg/star-grey.svg" alt="">
+                        </div>
+                        <p class="catalog__desc desc">Reviews (4)</p>
+                      </div>
+                      <h3 class="catalog__h3 h3">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                    </div>
+                    <div class="catalog__price"> <!-- Участвует в резине как кнопка -->
+                      <span class="catalog__price-old">$499.00</span>
+                      <!-- Новая цена (акционная) -->
+                      <strong class="catalog__price-new">$499.00</strong>
+                    </div>
+                  </div>
+                </article>
+              </li>         
+            </ul>
+            <!-- Кастомные стрелки для hero 
+            <div class="laptops__prev swiper-button-prev"><span>‹</span></div>
+            <div class="laptops__next swiper-button-next"><span>›</span></div>-->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    
+
+    <script src="js/tab.js"></script>
+  </body>
+</html>

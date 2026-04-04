@@ -1,0 +1,54 @@
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.part {
+  width: 50%;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.acc {
+  padding-bottom: 26px;
+}
+
+.acc-375 {
+  display: none;
+}
+
+button.acc__link {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: auto;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 545px) {
+  [class*="__container"] {
+    padding: 0 15px;
+  }
+
+  .acc {
+    padding-bottom: 0;
+  }
+
+  .acc-1920 {
+    display: none;
+  }
+
+  .acc-375 {
+    display: block;
+  }
+}
