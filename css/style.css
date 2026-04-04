@@ -5,6 +5,13 @@ ul {
   list-style: none;
 }
 
+[class*="container"] {
+  margin: 0 auto;
+  padding: 0 50px;
+  /*1498px = 1398px + 50px + 50px не менять*/
+  max-width: 1500px;
+}
+
 .part {
   width: 50%;
 }
